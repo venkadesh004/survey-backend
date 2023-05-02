@@ -6,15 +6,7 @@ const connectDB = async () => {
 
         mongoose.set('strictQuery', false);
 
-        mongoose.connect(dbURL, (err) => {
-            if (err) {
-                console.log(`Error ${err.message}`);
-                return;
-            } else {
-                console.log(`MongoDB connection Successful`);
-                return;
-            }
-        });
+        mongoose.connect(dbURL);
     } catch (err) {
         console.log(`Error: ${err}`);
     }
