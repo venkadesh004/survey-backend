@@ -6,7 +6,7 @@ const connectDB = async () => {
 
         mongoose.set('strictQuery', false);
 
-        mongoose.connect(dbURL);
+        await mongoose.connect(dbURL);
     } catch (err) {
         console.log(`Error: ${err}`);
     }
