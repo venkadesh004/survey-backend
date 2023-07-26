@@ -206,26 +206,6 @@ const graduateExitSurvey = new mongoose.Schema({
     type: String,
     default: "None",
   },
-  onlineExam: {
-    type: String,
-    default: "None",
-  },
-  GREScore: {
-    type: String,
-    default: "None",
-  },
-  GMATScore: {
-    type: String,
-    default: "None",
-  },
-  CATScore: {
-    type: String,
-    default: "None",
-  },
-  GATEScore: {
-    type: String,
-    default: "None",
-  },
   workforceName: {
     type: String,
     default: "None",
@@ -243,26 +223,6 @@ const graduateExitSurvey = new mongoose.Schema({
     default: "None",
   },
   workforceSalaryPerAnnum: {
-    type: String,
-    default: "None",
-  },
-  onlineExam: {
-    type: String,
-    default: "None",
-  },
-  GREScore: {
-    type: String,
-    default: "None",
-  },
-  GMATScore: {
-    type: String,
-    default: "None",
-  },
-  CATScore: {
-    type: String,
-    default: "None",
-  },
-  GATEScore: {
     type: String,
     default: "None",
   },
@@ -303,7 +263,7 @@ const graduateExitSurvey = new mongoose.Schema({
     default: "None",
   },
   onlineExam: {
-    type: String,
+    type: Array,
     default: "None",
   },
   GREScore: {
