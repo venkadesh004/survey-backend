@@ -13,6 +13,7 @@ const parentsRoutes = require('./routes/parentsFeedbackRoutes');
 const courseExitSurvey = require('./routes/courseExitSurveyRoutes');
 const employerFeedback = require('./routes/employerFeedbackRoutes');
 const alumniFeedback = require('./routes/alumniFeedbackRoutes');
+const graduateExitSurvey = require('./routes/graduateExitSurveyRoutes');
 
 const connectDB = require('./db/db');
 
@@ -26,6 +27,7 @@ app.use('/parentsFeedback', parentsRoutes);
 app.use('/courseExitSurvey', courseExitSurvey);
 app.use('/employerFeedback', employerFeedback);
 app.use('/alumniFeedback', alumniFeedback);
+app.use('/graduateExitSurvey', graduateExitSurvey);
 
 const PORT = process.env.PORT || 5000;
 
