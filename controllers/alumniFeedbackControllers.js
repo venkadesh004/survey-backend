@@ -43,7 +43,7 @@ const updateFeedback = async (req, res) => {
     try {
         const data = req.body;
 
-        await AlumniFeedback.updateOne(data).then(result => {
+        await AlumniFeedback.updateOne({"_id": data["_id"]}, data).then(result => {
             AlumniFeedback.find({}).then(data => {
                 return res.send(data);
             });

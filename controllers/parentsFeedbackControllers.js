@@ -43,7 +43,7 @@ const updateFeedback = async (req, res) => {
     try {
         const data = req.body;
 
-        await ParentsFeedback.updateOne(data).then(result => {
+        await ParentsFeedback.updateOne({"_id": data["_id"]}, data).then(result => {
             ParentsFeedback.find({}).then(data => {
                 return res.send(data);
             });

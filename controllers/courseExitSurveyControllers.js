@@ -43,7 +43,7 @@ const updateFeedback = async (req, res) => {
     try {
         const data = req.body;
 
-        await CourseExitSurvey.updateOne(data).then(result => {
+        await CourseExitSurvey.updateOne({"_id": data["_id"]}, data).then(result => {
             CourseExitSurvey.find({}).then(data => {
                 return res.send(data);
             });

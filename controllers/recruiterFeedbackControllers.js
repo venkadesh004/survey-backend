@@ -42,8 +42,9 @@ const deleteFeedback = async (req, res) => {
 const updateFeedback = async (req, res) => {
     try {
         const data = req.body;
+        console.log(data["_id"]);
 
-        await RecruiterFeedback.updateOne(data).then(result => {
+        await RecruiterFeedback.updateOne({"_id": data["_id"]}, data).then(result => {
             RecruiterFeedback.find({}).then(data => {
                 return res.send(data);
             });
