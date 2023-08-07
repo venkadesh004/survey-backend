@@ -1,5 +1,6 @@
 const CourseExitSurvey = require('../models/courseExitSurvey');
 const createCSVWriter = require('csv-writer').createObjectCsvWriter;
+const fs = require('fs');
 
 const courseExitSurveyHeader = [
     {id: "courseCode", title: "Course Code"},
@@ -86,6 +87,7 @@ const updateFeedback = async (req, res) => {
 }
 
 const downloadData = async (req, res) => {
+    fs.unlinkSync(fileURL);
     CourseExitSurvey.find({}).then((data) => {
         var csvData = [];
 
