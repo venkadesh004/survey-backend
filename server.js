@@ -2,6 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
 const app = express();
 
 app.use(cors({
@@ -29,7 +33,7 @@ app.use('/employerFeedback', employerFeedback);
 app.use('/alumniFeedback', alumniFeedback);
 app.use('/graduateExitSurvey', graduateExitSurvey);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
     console.log(`Server started and listening on port: ${PORT}`);
