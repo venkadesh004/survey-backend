@@ -1,78 +1,76 @@
-21CSR10,Discrete Mathematics,2023,5,4,4,4,4,4,4,4,appropriate,Improve More,Nice sir,Sir,excellent,excellent,more copies required
-21PLA0,Cloud Computnig,2023,5,5,5,5,5,5,5,5,appropriate,None,None,None,excellent,excellent,available
-21C510,Numerical Methods,2023,5,5,5,5,5,5,5,5,appropriate,None,None,None,excellent,excellent,available
-21CSR10,Discrete Mathematics,2023,5,4,3,2,1,NA,1,2,appropriate,Good,iauab,iuwebf,good,good,available
-21CS560,Software Engineering,2023,5,5,5,5,5,5,5,5,appropriate,None,None,None,excellent,excellent,available
-22MA110,Calculus for engineers,2022-2023,5,5,5,4,4,4,5,5,appropriate,No,Professor teaching,Vast portion at first stage,excellent,excellent,available
-22CS250,System programming ,1,1,2,3,4,4,4,4,5,appropriate,Nothing ,Programming language ,Commands,good,good,available
-22CS220,Electronics and Digital circuits,1st year,5,5,5,5,5,5,5,5,appropriate,Nothing ,Knowledge about new topics ,Nothing ,good,good,available
-22ES150,Engineering exploration,2022-2023,5,5,4,4,4,3,3,3,appropriate,None,Engineering related new topics,More theoretical than pratical,good,good,available
-22CS160,Foundations of computer programming,2022-2023,3,3,3,4,4,4,4,4,changesRequired,Finish the portions fully,. ,Portions are not fully taught,good,good,moreCopiesRequired
-22PH120,Physics,2022-2023,4,4,4,3,1,1,1,1,changesRequired,"Need to change the professor. 
+Key,Course Code,Course Name,Year,CO1,CO2,CO3,CO4,CO5,CO6,CO7,CO8,Appropriateness Of Assessment Tools,Course Suggestions,Like,Dislike,Hosting Tools,Lecture Rating,Text Book Availability
+64ca002429483cb3271ac28f,22MA110,Calculus for engineers,2022-2023,5,5,5,4,4,4,5,5,appropriate,No,Professor teaching,Vast portion at first stage,excellent,excellent,available
+64ca067c30dc172c37eaca43,22CS250,System programming ,1,1,2,3,4,4,4,4,5,appropriate,Nothing ,Programming language ,Commands,good,good,available
+64ca095630dc172c37eaca45,22CS220,Electronics and Digital circuits,1st year,5,5,5,5,5,5,5,5,appropriate,Nothing ,Knowledge about new topics ,Nothing ,good,good,available
+64ca0c9230dc172c37eaca47,22ES150,Engineering exploration,2022-2023,5,5,4,4,4,3,3,3,appropriate,None,Engineering related new topics,More theoretical than pratical,good,good,available
+64ca0d5530dc172c37eaca49,22CS160,Foundations of computer programming,2022-2023,3,3,3,4,4,4,4,4,changesRequired,Finish the portions fully,. ,Portions are not fully taught,good,good,moreCopiesRequired
+64ca0e4430dc172c37eaca4b,22PH120,Physics,2022-2023,4,4,4,3,1,1,1,1,changesRequired,"Need to change the professor. 
 Professor voice is not at all audible. 
 Didn't teach to the fullest",None,Professor is not responsible about the portions ,average,average,moreCopiesRequired
-22CH130,Chemistry,2022-2023,5,5,5,5,4,4,4,4,appropriate,None,Professor,None,good,good,available
-22CS150,Engineering exploration ,2022-23,5,5,5,5,5,5,5,5,appropriate,Good enough,Easy to learn ,Nothing,excellent,excellent,available
-22MA110,Calculus for engineers ,2022-23,5,5,5,5,5,5,5,5,appropriate,Good enough,Faculty ,Lots of concepts,excellent,excellent,available
-22CS160,Foundations of computer programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,We weren't aware of some concepts which wasn't taught due to short period ,Concepts,Not all concepts were taught due to lack of time,good,good,moreCopiesRequired
-22EG140,Technical english,2022-23,5,5,5,5,5,5,5,5,appropriate,Good enough ,Everything ,Nothing,excellent,excellent,available
-22PH120,Physics,2022-23,4,4,4,4,4,4,4,4,changesRequired,Poor teaching of concepts we were able to experience ,Concepts,Concepts were not taught clearly. Explanations were not given properly,average,average,moreCopiesRequired
-22CH130,Chemistry,2022-23,5,5,5,5,5,5,5,5,appropriate,Good enough ,Concepts,Nothing,excellent,excellent,available
-22CS210,Matrices and linear algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Not enough time to workout the sums,Concepts,Lots of concepts,good,good,available
-22CS220,Electronics and digital system ,2022-23,5,5,5,5,5,5,5,5,appropriate,No proper material available for the whole course.,Concepts and faculty ,Lots of concepts,good,excellent,notAvailable
-22CS230,Computer organisation and architecture ,2022-23,5,5,5,5,5,5,5,5,appropriate,Concepts were okay. But not enough time to try all the book back numericals,Few easy to learn concepts ,Lots of concepts,good,good,available
-22CS240,Problem solving and programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching is fine. But questions in the practical examination were too tough and involved many practical application types questions. So practice to those application type questions is also important during lecture hours,Concepts,Questions were too tough during practical exams,good,excellent,moreCopiesRequired
-22CS250,System programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Need more materials,Concepts,There is no proper material for the whole course as a one book. Need to refer from various sources and books.,good,good,moreCopiesRequired
-22CS260,Engineering graphics and extended reality,2022-23,5,5,5,5,5,5,5,5,appropriate,Need more guidance and teaching the concepts clearly ,Concepts,Mostly we were studying on our own and were appearing for practical examinations,average,average,notAvailable
-22CS270,Computer systems lab,2022-23,5,5,5,5,5,5,5,5,appropriate,"Two model exams were conducted for this course which we felt difficult due to lack of time as we need to complete our record, take printouts, workout the codes etc. Meanwhile we were also need to concentrate on other subjects too.",Concepts(Linux based concepts),Lots of concepts,good,good,available
-22CS280,Programming lab ,2022-23,5,5,5,5,5,5,5,5,appropriate,"Two model exams were conducted for this course which we felt difficult due to lack of time as we need to complete our record, take printouts, workout the codes etc. Meanwhile we were also need to concentrate on other subjects too. And the questions during model exams and terminal practical exams were of practical application and which were not taught/discussed during lecture hours even as an example",Concepts,Not satisfied with the model exams and terminal practical exams since concepts were in application type which were not discussed during lecture hours ,good,good,available
-22CHAA0,Environmental science ,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching was very good and especially the project presentation which we were doing throughout the semester as 4 different reviews. That was a very good experience. Our presentation skill improved a lot for each presentation. So I will definitely recommend to retain this concept of doing presentation for juniors too.,Group project presentation and faculty ,Nothing,excellent,excellent,notAvailable
-22CHAA0,Environmental science ,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching was very good and especially the project presentation which we were doing throughout the semester as 4 different reviews. That was a very good experience. Our presentation skill improved a lot for each presentation. So I will definitely recommend to retain this concept of doing presentation for juniors too.,Group project presentation and faculty ,Nothing,excellent,excellent,notAvailable
-22EG170,English Lab ,2022-23,5,5,5,5,5,5,5,5,appropriate,All lab sessions were so useful and efficient. ,Concepts and all lab sessions were too good.,Nothing,excellent,excellent,available
-22PH180,Physics lab,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching was not done during any lab sessions. We studied ourselves and did our practical examinations. Teaching and telling about the concepts must be done.,Concepts,Concepts were not taught during any hour,good,average,notAvailable
-22CH190,Chemistry Lab,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching was excellent but strict.,Concepts,Lab sessions were so strict ,good,good,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
-22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
-22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
-22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
-22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
-22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
-22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
-22CS160,Foundation of computer programming ,2022-2023,5,5,5,3,3,2,NA,NA,appropriate,No,Theory cum practical course,The past Cos were not covered fully,excellent,good,available
-22CS160,Foundation of computer programming ,2022-2023,5,5,5,3,3,2,NA,NA,appropriate,No,Theory cum practical course,The past Cos were not covered fully,excellent,good,available
-22CS160,Foundation of computer programming ,2022-2023,5,5,5,3,3,2,NA,NA,appropriate,No,Theory cum practical course,The past Cos were not covered fully,excellent,good,available
-22CS220,Electronics and Digital Systems ,2022-2023,5,5,5,4,5,5,NA,NA,appropriate,No,No,No,excellent,excellent,notAvailable
-22CS220,Electronics and Digital Systems ,2022-2023,5,5,5,4,5,5,NA,NA,appropriate,No,No,No,excellent,excellent,notAvailable
-22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
-22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
-22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
-22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
-22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
-22CS230,Computer organization and architecture ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,No,Minimum time to cover the entire syllabus ,excellent,excellent,notAvailable
-22CS230,Computer organization and architecture ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,No,Minimum time to cover the entire syllabus ,excellent,excellent,notAvailable
-22CS210,Matrices and Linear Algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,I get to learn about new topics,Nothing ,good,good,available
-22CS210,Matrices and Linear Algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,I get to learn about new topics,Nothing ,good,good,available
-22CS210,Matrices and Linear Algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,I get to learn about new topics,Nothing ,good,good,available
-22CS210,Matrices and Linear Algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,I get to learn about new topics,Nothing ,good,good,available
-22CS220,Electronics and Digital Systems ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Knowledge about new topics ,Nothing ,good,good,available
-22CS230,Computer Organisation and Architecture ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Really got a new experience from this course,Nothing ,good,good,available
-22CS240,Problem Solving and Programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Teaching methods ,Nothing ,good,good,available
-22CS250,System Programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Flow of course ,Nothing ,good,good,available
-22CHAA0,Environmental science ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Presentation part,Nothing,good,good,available
-22MA110,Calculus for Engineers ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Python session ,Nothing ,good,good,available
-22CS150,Engineering exploration ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Knowledge about engineering course,Nothing,good,good,available
-22CS160,Foundations of computer programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Knowledge about new topics ,Nothing,good,good,available
-22EG140,Technical English ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Speaking skills,Nothing,good,good,available
-22PH120,Physics ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Laboratory experience ,Nothing,good,good,available
-22CH130,Chemistry ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Laboratory experience ,Nothing,good,good,available
+64ca0f3a30dc172c37eaca4d,22CH130,Chemistry,2022-2023,5,5,5,5,4,4,4,4,appropriate,None,Professor,None,good,good,available
+64ca96a30086a67bfe057a68,22CS150,Engineering exploration ,2022-23,5,5,5,5,5,5,5,5,appropriate,Good enough,Easy to learn ,Nothing,excellent,excellent,available
+64ca96d40086a67bfe057a6a,22MA110,Calculus for engineers ,2022-23,5,5,5,5,5,5,5,5,appropriate,Good enough,Faculty ,Lots of concepts,excellent,excellent,available
+64ca97750086a67bfe057a6c,22CS160,Foundations of computer programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,We weren't aware of some concepts which wasn't taught due to short period ,Concepts,Not all concepts were taught due to lack of time,good,good,moreCopiesRequired
+64ca97a90086a67bfe057a6e,22EG140,Technical english,2022-23,5,5,5,5,5,5,5,5,appropriate,Good enough ,Everything ,Nothing,excellent,excellent,available
+64ca981e0086a67bfe057a70,22PH120,Physics,2022-23,4,4,4,4,4,4,4,4,changesRequired,Poor teaching of concepts we were able to experience ,Concepts,Concepts were not taught clearly. Explanations were not given properly,average,average,moreCopiesRequired
+64ca98460086a67bfe057a72,22CH130,Chemistry,2022-23,5,5,5,5,5,5,5,5,appropriate,Good enough ,Concepts,Nothing,excellent,excellent,available
+64ca98cb0086a67bfe057a74,22CS210,Matrices and linear algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Not enough time to workout the sums,Concepts,Lots of concepts,good,good,available
+64ca994f0086a67bfe057a76,22CS220,Electronics and digital system ,2022-23,5,5,5,5,5,5,5,5,appropriate,No proper material available for the whole course.,Concepts and faculty ,Lots of concepts,good,excellent,notAvailable
+64ca99d90086a67bfe057a78,22CS230,Computer organisation and architecture ,2022-23,5,5,5,5,5,5,5,5,appropriate,Concepts were okay. But not enough time to try all the book back numericals,Few easy to learn concepts ,Lots of concepts,good,good,available
+64ca9a890086a67bfe057a7a,22CS240,Problem solving and programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching is fine. But questions in the practical examination were too tough and involved many practical application types questions. So practice to those application type questions is also important during lecture hours,Concepts,Questions were too tough during practical exams,good,excellent,moreCopiesRequired
+64ca9b1e0086a67bfe057a7c,22CS250,System programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Need more materials,Concepts,There is no proper material for the whole course as a one book. Need to refer from various sources and books.,good,good,moreCopiesRequired
+64ca9b8b0086a67bfe057a7e,22CS260,Engineering graphics and extended reality,2022-23,5,5,5,5,5,5,5,5,appropriate,Need more guidance and teaching the concepts clearly ,Concepts,Mostly we were studying on our own and were appearing for practical examinations,average,average,notAvailable
+64ca9c680086a67bfe057a80,22CS270,Computer systems lab,2022-23,5,5,5,5,5,5,5,5,appropriate,"Two model exams were conducted for this course which we felt difficult due to lack of time as we need to complete our record, take printouts, workout the codes etc. Meanwhile we were also need to concentrate on other subjects too.",Concepts(Linux based concepts),Lots of concepts,good,good,available
+64ca9cfc0086a67bfe057a82,22CS280,Programming lab ,2022-23,5,5,5,5,5,5,5,5,appropriate,"Two model exams were conducted for this course which we felt difficult due to lack of time as we need to complete our record, take printouts, workout the codes etc. Meanwhile we were also need to concentrate on other subjects too. And the questions during model exams and terminal practical exams were of practical application and which were not taught/discussed during lecture hours even as an example",Concepts,Not satisfied with the model exams and terminal practical exams since concepts were in application type which were not discussed during lecture hours ,good,good,available
+64ca9dfe0086a67bfe057a84,22CHAA0,Environmental science ,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching was very good and especially the project presentation which we were doing throughout the semester as 4 different reviews. That was a very good experience. Our presentation skill improved a lot for each presentation. So I will definitely recommend to retain this concept of doing presentation for juniors too.,Group project presentation and faculty ,Nothing,excellent,excellent,notAvailable
+64ca9e000086a67bfe057a86,22CHAA0,Environmental science ,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching was very good and especially the project presentation which we were doing throughout the semester as 4 different reviews. That was a very good experience. Our presentation skill improved a lot for each presentation. So I will definitely recommend to retain this concept of doing presentation for juniors too.,Group project presentation and faculty ,Nothing,excellent,excellent,notAvailable
+64ca9ea20086a67bfe057a88,22EG170,English Lab ,2022-23,5,5,5,5,5,5,5,5,appropriate,All lab sessions were so useful and efficient. ,Concepts and all lab sessions were too good.,Nothing,excellent,excellent,available
+64ca9f460086a67bfe057a8a,22PH180,Physics lab,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching was not done during any lab sessions. We studied ourselves and did our practical examinations. Teaching and telling about the concepts must be done.,Concepts,Concepts were not taught during any hour,good,average,notAvailable
+64ca9f9e0086a67bfe057a8c,22CH190,Chemistry Lab,2022-23,5,5,5,5,5,5,5,5,appropriate,Teaching was excellent but strict.,Concepts,Lab sessions were so strict ,good,good,available
+64cdd7b5a44336007a5a35b0,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35b2,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35b4,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35b6,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35b8,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35ba,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35bc,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35be,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35c0,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35c2,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b5a44336007a5a35c4,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd7b6a44336007a5a35c6,22CS250,System programming ,2022-2023,5,5,5,5,5,4,NA,NA,appropriate,Good content ,Highlighting the difference between windows and Linux architecture ,The boundary is vast,excellent,excellent,available
+64cdd849a44336007a5a35c8,22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
+64cdd849a44336007a5a35ca,22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
+64cdd849a44336007a5a35cc,22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
+64cdd849a44336007a5a35ce,22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
+64cdd849a44336007a5a35d0,22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
+64cdd84aa44336007a5a35d2,22ES150,Engineering exploration ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,Introduction this course in the 1st semester helped us to gain the a better understanding of engineering ,No,excellent,excellent,notAvailable
+64cdd8c0a44336007a5a35d4,22CS160,Foundation of computer programming ,2022-2023,5,5,5,3,3,2,NA,NA,appropriate,No,Theory cum practical course,The past Cos were not covered fully,excellent,good,available
+64cdd8c1a44336007a5a35d6,22CS160,Foundation of computer programming ,2022-2023,5,5,5,3,3,2,NA,NA,appropriate,No,Theory cum practical course,The past Cos were not covered fully,excellent,good,available
+64cdd8c1a44336007a5a35d8,22CS160,Foundation of computer programming ,2022-2023,5,5,5,3,3,2,NA,NA,appropriate,No,Theory cum practical course,The past Cos were not covered fully,excellent,good,available
+64cdd909a44336007a5a35da,22CS220,Electronics and Digital Systems ,2022-2023,5,5,5,4,5,5,NA,NA,appropriate,No,No,No,excellent,excellent,notAvailable
+64cdd909a44336007a5a35dc,22CS220,Electronics and Digital Systems ,2022-2023,5,5,5,4,5,5,NA,NA,appropriate,No,No,No,excellent,excellent,notAvailable
+64cdd99da44336007a5a35de,22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
+64cdd99da44336007a5a35e0,22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
+64cdd99da44336007a5a35e2,22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
+64cdd99da44336007a5a35e4,22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
+64cdd99da44336007a5a35e6,22CS240,Problem solving and programming ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,The methodology of delivering the content by the lecturer ,No,excellent,excellent,available
+64cdda20a44336007a5a35e8,22CS230,Computer organization and architecture ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,No,Minimum time to cover the entire syllabus ,excellent,excellent,notAvailable
+64cdda21a44336007a5a35ea,22CS230,Computer organization and architecture ,2022-2023,5,5,5,5,5,5,NA,NA,appropriate,No,No,Minimum time to cover the entire syllabus ,excellent,excellent,notAvailable
+64ce21da86e6dcdf403b99b1,22CS210,Matrices and Linear Algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,I get to learn about new topics,Nothing ,good,good,available
+64ce21da86e6dcdf403b99b3,22CS210,Matrices and Linear Algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,I get to learn about new topics,Nothing ,good,good,available
+64ce21da86e6dcdf403b99b5,22CS210,Matrices and Linear Algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,I get to learn about new topics,Nothing ,good,good,available
+64ce21da86e6dcdf403b99b7,22CS210,Matrices and Linear Algebra ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,I get to learn about new topics,Nothing ,good,good,available
+64ce229a86e6dcdf403b99b9,22CS220,Electronics and Digital Systems ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Knowledge about new topics ,Nothing ,good,good,available
+64ce22f386e6dcdf403b99bb,22CS230,Computer Organisation and Architecture ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Really got a new experience from this course,Nothing ,good,good,available
+64ce234686e6dcdf403b99bd,22CS240,Problem Solving and Programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Teaching methods ,Nothing ,good,good,available
+64ce238586e6dcdf403b99bf,22CS250,System Programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Flow of course ,Nothing ,good,good,available
+64ce23b886e6dcdf403b99c1,22CHAA0,Environmental science ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Presentation part,Nothing,good,good,available
+64ce242186e6dcdf403b99c3,22MA110,Calculus for Engineers ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Python session ,Nothing ,good,good,available
+64ce245b86e6dcdf403b99c5,22CS150,Engineering exploration ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Knowledge about engineering course,Nothing,good,good,available
+64ce248d86e6dcdf403b99c7,22CS160,Foundations of computer programming ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Knowledge about new topics ,Nothing,good,good,available
+64ce24c586e6dcdf403b99c9,22EG140,Technical English ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Speaking skills,Nothing,good,good,available
+64ce24f886e6dcdf403b99cb,22PH120,Physics ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Laboratory experience ,Nothing,good,good,available
+64ce252586e6dcdf403b99cd,22CH130,Chemistry ,2022-23,5,5,5,5,5,5,5,5,appropriate,Nothing ,Laboratory experience ,Nothing,good,good,available
+64d9f8ae85514c0a7711c5ca,21CS580, Network Programming Lab, 2022-23, 3,3,4,3,2,3,3,4,appropriate,Nothing ,Laboratory experience ,Nothing,good,good,available
+,21CS570, Database Lab, 2022-23, 3,3,4,3,2,3,3,4,appropriate,Nothing ,Laboratory experience ,Nothing,good,good,available

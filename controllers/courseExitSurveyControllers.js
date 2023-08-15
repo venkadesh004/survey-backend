@@ -1,114 +1,195 @@
-const CourseExitSurvey = require('../models/courseExitSurvey');
-const createCSVWriter = require('csv-writer').createObjectCsvWriter;
-const fs = require('fs');
+const CourseExitSurvey = require("../models/courseExitSurvey");
+const createCSVWriter = require("csv-writer").createObjectCsvWriter;
+const fs = require("fs");
+const csv = require("csv-parser");
 
 const courseExitSurveyHeader = [
-    {id: "courseCode", title: "Course Code"},
-    {id: "courseName", title: "Course Name"},
-    {id: "year", title: "Year"},
-    {id: "CO1", title: "CO1"},
-    {id: "CO2", title: "CO2"},
-    {id: "CO3", title: "CO3"},
-    {id: "CO4", title: "CO4"},
-    {id: "CO5", title: "CO5"},
-    {id: "CO6", title: "CO6"},
-    {id: "CO7", title: "CO7"},
-    {id: "CO8", title: "CO8"},
-    {id: "appropriatenessOfAssessmentToolsUsed", title: "Appropriateness Of Assessment Tools"},
-    {id: "courseSuggestions", title: "Course Suggestions"},
-    {id: "like", title: "Like"},
-    {id: "dislike", title: "Dislike"},
-    {id: "hostingTools", title: "Hosting Tools"},
-    {id: "lectureRating", title: "Lecture Rating"},
-    {id: "textBookAvailability", title: "Text Book Availability"}
+  { id: "_id", title: "Key" },
+  { id: "courseCode", title: "Course Code" },
+  { id: "courseName", title: "Course Name" },
+  { id: "year", title: "Year" },
+  { id: "CO1", title: "CO1" },
+  { id: "CO2", title: "CO2" },
+  { id: "CO3", title: "CO3" },
+  { id: "CO4", title: "CO4" },
+  { id: "CO5", title: "CO5" },
+  { id: "CO6", title: "CO6" },
+  { id: "CO7", title: "CO7" },
+  { id: "CO8", title: "CO8" },
+  {
+    id: "appropriatenessOfAssessmentToolsUsed",
+    title: "Appropriateness Of Assessment Tools",
+  },
+  { id: "courseSuggestions", title: "Course Suggestions" },
+  { id: "like", title: "Like" },
+  { id: "dislike", title: "Dislike" },
+  { id: "hostingTools", title: "Hosting Tools" },
+  { id: "lectureRating", title: "Lecture Rating" },
+  { id: "textBookAvailability", title: "Text Book Availability" },
 ];
 
-const fileURL = './download/courseExitSurvey.csv';
+const fileURL = "./download/courseExitSurvey.csv";
 
 const csvWriter = createCSVWriter({
-    path: fileURL,
-    header: courseExitSurveyHeader
+  path: fileURL,
+  header: courseExitSurveyHeader,
 });
 
 const getFeedback = (req, res) => {
-    CourseExitSurvey.find({}).then((data) => {
-        return res.send(data);
-    });
+  CourseExitSurvey.find({}).then((data) => {
+    return res.send(data);
+  });
 };
 
 const addFeedback = async (req, res) => {
-    try {
-        const data = req.body;
+  try {
+    const data = req.body;
 
-        await CourseExitSurvey.insertMany(data).then(result => {
-            return res.sendStatus(201).json(result);
-        }).catch(err => {
-            console.log(err);
-            return res.sendStatus(500).json({ err: "Internal server error!" });
-        });
-    } catch (err) {
+    await CourseExitSurvey.insertMany(data)
+      .then((result) => {
+        return res.sendStatus(201).json(result);
+      })
+      .catch((err) => {
         console.log(err);
-    }
+        return res.sendStatus(500).json({ err: "Internal server error!" });
+      });
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const deleteFeedback = async (req, res) => {
-    try {
-        const data = req.body;
+  try {
+    const data = req.body;
 
-        console.log(data);
-        await CourseExitSurvey.deleteOne(data).then(result => {
-            CourseExitSurvey.find({}).then(data => {
-                return res.send(data);
-            });
-        }).catch(err => {
-            console.log(err);
-            return res.sendStatus(500).json({ err: "Internal server Error!" });
+    console.log(data);
+    await CourseExitSurvey.deleteOne(data)
+      .then((result) => {
+        CourseExitSurvey.find({}).then((data) => {
+          return res.send(data);
         });
-    } catch (err) {
+      })
+      .catch((err) => {
         console.log(err);
-    }
-}
+        return res.sendStatus(500).json({ err: "Internal server Error!" });
+      });
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 const updateFeedback = async (req, res) => {
-    try {
-        const data = req.body;
+  try {
+    const data = req.body;
 
-        await CourseExitSurvey.updateOne({"_id": data["_id"]}, data).then(result => {
-            CourseExitSurvey.find({}).then(data => {
-                return res.send(data);
-            });
-        }).catch(err => {
-            console.log(err);
-            return res.sendStatus(500).json({ err: "Internal server Error!" });
+    await CourseExitSurvey.updateOne({ _id: data["_id"] }, data)
+      .then((result) => {
+        CourseExitSurvey.find({}).then((data) => {
+          return res.send(data);
         });
-    } catch (err) {
+      })
+      .catch((err) => {
         console.log(err);
-    }
-}
+        return res.sendStatus(500).json({ err: "Internal server Error!" });
+      });
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 const downloadData = async (req, res) => {
-    fs.unlinkSync(fileURL);
-    CourseExitSurvey.find({}).then((data) => {
-        var csvData = [];
-
-        data.forEach(element => {
-            csvData.push(element);
+  fs.unlinkSync(fileURL);
+  CourseExitSurvey.find({})
+    .then((data) => {
+      csvWriter
+        .writeRecords(data)
+        .then(() => {
+          return res.download(fileURL);
+        })
+        .catch((err) => {
+          console.log(err);
+          return res.sendStatus(500).json({ err: "Internal server Error!" });
         });
-
-        csvWriter.writeRecords(data).then(() => {
-            return res.download(fileURL);
-        }).catch(err => {
-            console.log(err);
-            return res.sendStatus(500).json({err: "Internal server Error!"});
-        });
-    }).catch(err => {
-        console.log(err);
-        return res.sendStatus(500).json({err: "Internal server Error!"});
+    })
+    .catch((err) => {
+      console.log(err);
+      return res.sendStatus(500).json({ err: "Internal server Error!" });
     });
-} 
+};
+
+function jsonFormater(rowData) {
+  var format = {
+    _id: rowData["Key"],
+    courseCode: rowData["Course Code"],
+    courseName: rowData["Course Name"],
+    year: rowData["Year"],
+    CO1: rowData["CO1"],
+    CO2: rowData["CO2"],
+    CO3: rowData["CO3"],
+    CO4: rowData["CO4"],
+    CO5: rowData["CO5"],
+    CO6: rowData["CO6"],
+    CO7: rowData["CO7"],
+    CO8: rowData["CO8"],
+    appropriatenessOfAssessmentToolsUsed:
+      rowData["Appropriateness Of Assessment Tools"],
+    courseSuggestions: rowData["Course Suggestions"],
+    like: rowData["Like"],
+    dislike: rowData["Dislike"],
+    hostingTools: rowData["Hosting Tools"],
+    lectureRating: rowData["Lecture Rating"],
+    textBookAvailability: rowData["Text Book Availability"],
+  };
+
+  return format;
+}
+
+async function checkChange(obj1, obj2) {
+  for (var [key, value] of Object.entries(obj1)) {
+    if (value !== obj2[key] && key !== "_id") {
+        console.log("Difference: ", key);
+        console.log(value, obj2[key]);
+      return true;
+    }
+  }
+
+  return false;
+}
+
+const uploadData = async (req, res) => {
+  try {
+    fs.createReadStream("./download/courseExitSurvey.csv")
+      .pipe(csv())
+      .on("data", async (row) => {
+        newData = jsonFormater(row);
+        if (newData["_id"] === "") {
+          delete newData["_id"];
+          await CourseExitSurvey.insertMany(newData)
+            .then((result) => {
+              console.log("Inserted Data");
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        } else {
+          await CourseExitSurvey.updateOne({ _id: newData["_id"] }, newData).then((data) => {
+            console.log("Update Successful!");
+          }).catch(err => {
+            console.log(err);
+          });
+        }
+      })
+      .on("end", () => {
+        console.log("CSV file successfully processed");
+      });
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 module.exports.getFeedback = getFeedback;
 module.exports.addFeedback = addFeedback;
 module.exports.deleteFeedback = deleteFeedback;
 module.exports.updateFeedback = updateFeedback;
 module.exports.downloadData = downloadData;
+module.exports.uploadDataCourseExitSurvey = uploadData;
