@@ -98,23 +98,50 @@ const updateFeedback = async (req, res) => {
 };
 
 const downloadData = async (req, res) => {
-  fs.unlinkSync(fileURL);
-  CourseExitSurvey.find({})
+  var dataList = [];
+
+  try {
+    fs.unlinkSync(fileURL);
+  } catch (err) {
+    console.log("File not found!");
+  }
+
+  await CourseExitSurvey.find({})
     .then((data) => {
-      csvWriter
-        .writeRecords(data)
-        .then(() => {
-          return res.download(fileURL);
-        })
-        .catch((err) => {
-          console.log(err);
-          return res.sendStatus(500).json({ err: "Internal server Error!" });
-        });
+      dataList.push(data);
     })
     .catch((err) => {
       console.log(err);
       return res.sendStatus(500).json({ err: "Internal server Error!" });
     });
+
+  // console.log(dataList);
+  let sortedData = () => dataList[0].sort((data1, data2) => {
+    if (data1.courseCode < data2.courseCode) {
+      return -1;
+    } 
+    if (data1.courseCode > data2.courseCode) {
+      return 1;
+    }
+    return 0;
+  });
+
+  sortedData();
+
+  // console.log("New data List");
+  // console.log(dataList);
+
+  dataList.forEach(data => {
+    csvWriter
+    .writeRecords(data)
+    .then(() => {
+      return res.download(fileURL);
+    })
+    .catch((err) => {
+      console.log(err);
+      return res.sendStatus(500).json({ err: "Internal server Error!" });
+    });
+  });
 };
 
 function jsonFormater(rowData) {
@@ -142,18 +169,6 @@ function jsonFormater(rowData) {
   };
 
   return format;
-}
-
-async function checkChange(obj1, obj2) {
-  for (var [key, value] of Object.entries(obj1)) {
-    if (value !== obj2[key] && key !== "_id") {
-        console.log("Difference: ", key);
-        console.log(value, obj2[key]);
-      return true;
-    }
-  }
-
-  return false;
 }
 
 const uploadData = async (req, res) => {
@@ -187,9 +202,54 @@ const uploadData = async (req, res) => {
   }
 };
 
+const getCourseReport = (req, res) => {
+  try {
+    const data = req.params.courseCode;
+
+    CourseExitSurvey.find({courseCode: data}).then(result => {
+      var appropriatenessOfAssessmentToolsUsed = [];
+      var hostingTools = [];
+      var lectureRating = [];
+      var textBookAvailability = [];
+
+      var totalRating = 0;
+
+      result.forEach(element => {
+        appropriatenessOfAssessmentToolsUsed.push(element["appropriatenessOfAssessmentToolsUsed"]);
+        hostingTools.push(element["hostingTools"]);
+        lectureRating.push(element["lectureRating"]);
+        textBookAvailability.push(element["textBookAvailability"]);
+      });
+      
+      return res.send([appropriatenessOfAssessmentToolsUsed, hostingTools, lectureRating, textBookAvailability]);
+    });
+  } catch (err) {
+    return res.send("Internal server Error");
+  }
+}
+
+const getCourses = (req, res) => {
+  CourseExitSurvey.find({}).then(result => {
+    var courses = [];
+
+    result.forEach(element => {
+      // console.log(courses);
+      if (!courses.includes(element["courseCode"])) {
+        courses.push(element["courseCode"]);
+      }
+    });
+
+    return res.send(courses);
+  }).catch(err => {
+    return res.send("Internal server Error");
+  });
+}
+
 module.exports.getFeedback = getFeedback;
 module.exports.addFeedback = addFeedback;
 module.exports.deleteFeedback = deleteFeedback;
 module.exports.updateFeedback = updateFeedback;
 module.exports.downloadData = downloadData;
 module.exports.uploadDataCourseExitSurvey = uploadData;
+module.exports.getCourseReport = getCourseReport;
+module.exports.getCourses = getCourses;
