@@ -245,6 +245,12 @@ const getCourses = (req, res) => {
   });
 }
 
+const getCourseFeedback = (req, res) => {
+  CourseExitSurvey.find({courseCode: req.params.courseCode}).then((data) => {
+    return res.send(data);
+  });
+};
+
 module.exports.getFeedback = getFeedback;
 module.exports.addFeedback = addFeedback;
 module.exports.deleteFeedback = deleteFeedback;
@@ -253,3 +259,4 @@ module.exports.downloadData = downloadData;
 module.exports.uploadDataCourseExitSurvey = uploadData;
 module.exports.getCourseReport = getCourseReport;
 module.exports.getCourses = getCourses;
+module.exports.getCourseFeedback = getCourseFeedback;
