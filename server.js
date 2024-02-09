@@ -43,6 +43,7 @@ const employerFeedback = require("./routes/employerFeedbackRoutes");
 const alumniFeedback = require("./routes/alumniFeedbackRoutes");
 const graduateExitSurvey = require("./routes/graduateExitSurveyRoutes");
 const facultyFeedback = require('./routes/facultyFeedbackRoutes');
+const peerFeedback = require('./routes/peerFeedbackRoutes');
 
 const connectDB = require("./db/db");
 
@@ -58,6 +59,7 @@ app.use("/employerFeedback", employerFeedback);
 app.use("/alumniFeedback", alumniFeedback);
 app.use("/graduateExitSurvey", graduateExitSurvey);
 app.use("/facultyFeedback", facultyFeedback);
+app.use("/peerFeedback", peerFeedback);
 
 app.post('/courseExitSurvey/uploadData', upload.single('csvFile'), (req, res) => {
     uploadDataCourseExitSurvey();
