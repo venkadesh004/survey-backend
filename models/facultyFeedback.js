@@ -45,6 +45,9 @@ const facultyFeedback = new mongoose.Schema({
     },
     timeForEffectiveCoverage: {
         type: String
+    },
+    courseFacilitator: {
+        type: String
     }
 });
 
