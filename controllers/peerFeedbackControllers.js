@@ -1,7 +1,7 @@
-const ParentsFeedback = require('../models/parentsFeedback');
+const PeerFeedback = require('../models/peerFeedback');
 
 const getFeedback = (req, res) => {
-    ParentsFeedback.find({}).then((data) => {
+    PeerFeedback.find({}).then((data) => {
         return res.send(data);
     });
 };
@@ -10,7 +10,7 @@ const addFeedback = async (req, res) => {
     try {
         const data = req.body;
 
-        await ParentsFeedback.insertMany(data).then(result => {
+        await PeerFeedback.insertMany(data).then(result => {
             return res.sendStatus(201).json(result);
         }).catch(err => {
             console.log(err);
@@ -26,8 +26,8 @@ const deleteFeedback = async (req, res) => {
         const data = req.body;
 
         console.log(data);
-        await ParentsFeedback.deleteOne(data).then(result => {
-            ParentsFeedback.find({}).then(data => {
+        await PeerFeedback.deleteOne(data).then(result => {
+            PeerFeedback.find({}).then(data => {
                 return res.send(data);
             });
         }).catch(err => {
@@ -43,8 +43,8 @@ const updateFeedback = async (req, res) => {
     try {
         const data = req.body;
 
-        await ParentsFeedback.updateOne({"_id": data["_id"]}, data).then(result => {
-            ParentsFeedback.find({}).then(data => {
+        await PeerFeedback.updateOne({"_id": data["_id"]}, data).then(result => {
+            PeerFeedback.find({}).then(data => {
                 return res.send(data);
             });
         }).catch(err => {
