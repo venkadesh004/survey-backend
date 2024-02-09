@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        const dbURL = "mongodb+srv://venkadesh:tce@cluster0.gsdc6j5.mongodb.net/?retryWrites=true&w=majority";
+        const dbURL = "mongodb+srv://venkadesh:venkadesh@cluster0.gsdc6j5.mongodb.net/?retryWrites=true&w=majority";
 
         mongoose.set('strictQuery', false);
 
